@@ -1,4 +1,6 @@
-Digoo DG-EX002 Weather Station - 433MHz Integration
+
+Digoo DG-E![4f9207a8fc4b0d271e36a4fd87ee45917011abf9_original](https://github.com/user-attachments/assets/16311609-cfd4-420f-9ca4-60cae76e81be)
+X002 Weather Station - 433MHz Integration
 The Digoo DG-EX002 outdoor sensor successfully decodes using the inFactory-TH protocol (compatible with FreeTec NC-3982/Nexus protocol family).
 
 Hardware Requirements
