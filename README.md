@@ -93,28 +93,30 @@ Create Manual MQTT Sensor also
 
 Add this to your configuration.yaml:
 
+
+
 mqtt:
 sensor:
-- name: "Outdoor Temperature"
+ - name: "Outdoor Temperature"
   state_topic: "home/OMG_rtl_433_ESP/RTL_433toMQTT/inFactory-TH/1/+"
   value_template: "{{ value_json.temperature_C | round(1) }}"
   unit_of_measurement: "°C"
   device_class: temperature
   state_class: measurement
 
-- name: "Outdoor Humidity"
+ - name: "Outdoor Humidity"
   state_topic: "home/OMG_rtl_433_ESP/RTL_433toMQTT/inFactory-TH/1/+"
   value_template: "{{ value_json.humidity | int }}"
   unit_of_measurement: "%"
   device_class: humidity
   state_class: measurement
   
-- name: "Outdoor Sensor Battery"
+ - name: "Outdoor Sensor Battery"
   state_topic: "home/OMG_rtl_433_ESP/RTL_433toMQTT/inFactory-TH/1/+"
   value_template: "{{ 'OK' if value_json.battery_ok == 1 else 'Low' }}"
   device_class: battery
   
-- name: "Outdoor Sensor RSSI"
+ - name: "Outdoor Sensor RSSI"
   state_topic: "home/OMG_rtl_433_ESP/RTL_433toMQTT/inFactory-TH/1/+"
   value_template: "{{ value_json.rssi | int }}"
   unit_of_measurement: "dBm"
